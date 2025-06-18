@@ -8,5 +8,6 @@ function includeHTML(id, file) {
 
 document.addEventListener("DOMContentLoaded", function() {
   includeHTML("header-placeholder", "header.html");
+  includeHTML("nav-placeholder", "nav.html");
   includeHTML("footer-placeholder", "footer.html");
 });
