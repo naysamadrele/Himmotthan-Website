@@ -5,84 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Himmotthan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <header>
-    <div style="display: flex; align-items: center;">
-      <img src="images/logo.jpeg" alt="Himmotthan Logo"
-        style="height:100px; width:auto; margin-right:32px; margin-left:32px; object-fit:contain; background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(56,142,60,0.13); align-self: center;">
-      <h1 style="margin: 0 auto; font-size: 2.2em; letter-spacing: 2px; text-align: center; flex: 1;">Himmotthan - An
-        Initiative of TATA TRUSTS</h1>
-    </div>
-    <nav>
-      <div class="dropdown" tabindex="0">
-        <a href="#home" class="dropbtn">Home</a>
-        <div class="dropdown-content">
-          <a href="#overview">Overview</a>
-          <a href="#vision">Vision</a>
-          <a href="#work-area">Our Projects</a>
-          <a href="#insights">Outreach</a>
-          <a href="#board">Governing Board</a>
-          <a href="#our-partners">Our Partners</a>
-          <a href="#collaborators">Government Collaborators</a>
-        </div>
-      </div>
-      <a href="#our-work">Our Work</a>
-      <a href="#our-partners">Our Partners</a>
-      <a href="#report-and-publications">Reports and Publications</a>
-      <a href="#project-village-gis">Project Village GIS</a>
-      <a href="#leh-livelihood-initiative">Leh Livelihood Initiative</a>
-    </nav>
-  </header>
-  <section class="section" id="overview">
-    <div class="overview-hero"
-      style="position: relative; min-height: 340px; border-radius: 18px; overflow: hidden; margin-bottom: 32px;">
-      <img src="images/overview.jpg" alt="Himalayan Landscape"
-        style="width: 100%; height: 340px; object-fit: cover; filter: brightness(0.62); display: block;">
-      <div class="overview-overlay"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(8,44,4,0.38) 0%, rgba(56,142,60,0.22) 100%);">
-      </div>
-      <div class="overview-content"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 48px 36px;">
-        <h2
-          style="color: #fff; font-size: 2.4em; margin-bottom: 16px; letter-spacing: 1px; text-shadow: 0 2px 12px rgba(0,0,0,0.18);">
-          Overview</h2>
-        <p
-          style="color: #f3f3f3; font-size: 1.18em; max-width: 700px; margin-bottom: 22px; text-shadow: 0 2px 8px rgba(0,0,0,0.13);">
-          The Himmotthan Society, the implementation arm of Tata Trusts for Himalayan development, is currently focusing
-          on integrated, multi-sectoral programs across Uttarakhand, Himachal Pradesh, and Ladakh. Working with over
-          124,000 villages and nearly 500,000 households, it supports key areas such as water and sanitation,
-          sustainable livelihoods, education, and community institution building.
-        </p>
-        <button onclick="openModal('overviewModal')"
-          style="background: #388e3c; color: #fff; border: none; padding: 12px 32px; border-radius: 8px; font-size: 1.1em; cursor: pointer; box-shadow: 0 2px 8px rgba(56,142,60,0.13); transition: background 0.2s;">Learn
-          More</button>
-      </div>
-    </div>
-    <div id="overviewModal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('overviewModal')">&times;</span>
-        <h2>Himmotthan Society Overview</h2>
+  <div id="top"></div>
+  <div id="header-placeholder"></div>
+  <!-- Overview Section -->
+  <div class="overview-container">
+    <div class="overview-bg">
+      <div class="overview-content">
+        <h2>Overview</h2>
         <p>
-          The Himmotthan Society, the implementation arm of Tata Trusts for Himalayan development, is currently focusing
-          on integrated, multi-sectoral programs across Uttarakhand, Himachal Pradesh, and Ladakh. Working with over
-          124,000 villages and nearly 500,000 households, it supports key areas such as water and sanitation,
-          sustainable livelihoods, education, and community institution building. Its water initiatives, like those in
-          Tehri, have significantly reduced water deficits and eased daily burdens for women. Livelihood efforts include
-          the Central Himalayan Livestock Initiative and the Ladakh Livelihood Initiative, promoting improved dairy,
-          agriculture, and local value chains. Collaborations with partners like Axis Bank Foundation are scaling
-          income-generating activities in tribal communities through high-value crops, solar tech, and rural
-          enterprises. In education, Himmotthan enhances early literacy and numeracy while encouraging physical literacy
-          in over 300 schools. It also strengthens grassroots organizations, supporting thousands of self-help groups
-          and women-led cooperatives. With measurable impacts such as increased household incomes and water
-          availability, Himmotthan’s mission is to build resilient, prosperous mountain communities that are
-          economically empowered and ecologically secure.
+          The Himmotthan Society, the implementation arm of Tata Trusts for Himalayan development, is currently focusing on integrated, multi-sectoral programs across Uttarakhand, Himachal Pradesh, and Ladakh. Working with over 124,000 villages and nearly 500,000 households, it supports key areas such as water and sanitation, sustainable livelihoods, education, and community institution building.
         </p>
       </div>
     </div>
-  </section>
+  </div>
   <section class="section" id="vision">
     <div style="display: flex; align-items: flex-start; gap: 36px; flex-wrap: wrap;">
       <img src="images/vision.jpg" alt="Vision"
@@ -133,8 +72,8 @@
           });
         </script>
   </section>
-  <section class="section" id="work-area">
-    <h2>Our Work Area</h2>
+  <section class="section" id="projects">
+    <h2>Our Projects</h2>
     <div class="features"
       style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; max-width: 1100px; margin: 0 auto;">
       <div class="feature"
@@ -420,42 +359,42 @@
         <div class="insight-bg"></div>
         <div class="insight-content">
           <div class="insight-title">Blocks</div>
-          <div class="insight-value" data-target="49">0</div>
+          <div class="insight-value" data-target="49" data-plus="true">0+</div>
         </div>
       </div>
       <div class="insight-card">
         <div class="insight-bg"></div>
         <div class="insight-content">
           <div class="insight-title">Project Clusters</div>
-          <div class="insight-value" data-target="50">0</div>
+          <div class="insight-value" data-target="50" data-plus="true">0+</div>
         </div>
       </div>
       <div class="insight-card">
         <div class="insight-bg"></div>
         <div class="insight-content">
           <div class="insight-title">Women Co-operatives for Enterprise Promotion</div>
-          <div class="insight-value" data-target="50">0</div>
+          <div class="insight-value" data-target="50" data-plus="true">0+</div>
         </div>
       </div>
       <div class="insight-card">
         <div class="insight-bg"></div>
         <div class="insight-content">
           <div class="insight-title">Villages</div>
-          <div class="insight-value" data-target="2070">0</div>
+          <div class="insight-value" data-target="2070" data-plus="true">0+</div>
         </div>
       </div>
       <div class="insight-card">
         <div class="insight-bg"></div>
         <div class="insight-content">
           <div class="insight-title">Households</div>
-          <div class="insight-value" data-target="124000">0</div>
+          <div class="insight-value" data-target="124000"data-plus="true">0+</div>
         </div>
       </div>
       <div class="insight-card">
         <div class="insight-bg"></div>
         <div class="insight-content">
           <div class="insight-title">Children through Grade Appropriate Learning</div>
-          <div class="insight-value" data-target="10000">0</div>
+          <div class="insight-value" data-target="10000" data-plus="true">0+</div>
         </div>
       </div>
     </div>
@@ -624,9 +563,47 @@
         }
       }
     </style>
-    <script src="dropdown.js"></script>
-    <script src="modal.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/modal.js"></script>
+    <script>
+      // Animate insight numbers when in view
+      document.addEventListener('DOMContentLoaded', function () {
+      function animateValue(el, start, end, duration, hasPlus) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        el.textContent = Math.floor(progress * (end - start) + start) + (hasPlus ? '+' : '');
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        } else {
+          el.textContent = end + (hasPlus ? '+' : '');
+        }
+        };
+        window.requestAnimationFrame(step);
+      }
 
+      let animated = false;
+      function handleInsightsScroll() {
+        const section = document.getElementById('insights');
+        if (!section) return;
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100 && !animated) {
+        animated = true;
+        document.querySelectorAll('.insight-value[data-target]').forEach(el => {
+          const end = parseInt(el.getAttribute('data-target'), 10);
+          const hasPlus = el.hasAttribute('data-plus');
+          animateValue(el, 0, end, 1200, hasPlus);
+        });
+        window.removeEventListener('scroll', handleInsightsScroll);
+        }
+      }
+      window.addEventListener('scroll', handleInsightsScroll);
+      handleInsightsScroll();
+      });
+    </script>
+    <div id="footer-placeholder"></div>
+  <script src="javascipt/header-footer.js"></script>
 </body>
-
 </html>
+
