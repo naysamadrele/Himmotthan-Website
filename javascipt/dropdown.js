@@ -38,6 +38,41 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Only one dropdown/submenu open at a time
+    // Main dropdowns
+    document.querySelectorAll('.dropdown .dropbtn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Close all open dropdowns
+            document.querySelectorAll('.dropdown-content.show').forEach(function(menu) {
+                if (menu !== btn.nextElementSibling) {
+                    menu.classList.remove('show');
+                }
+            });
+            // Toggle this dropdown
+            if (btn.nextElementSibling) {
+                btn.nextElementSibling.classList.toggle('show');
+            }
+        });
+    });
+
+    // Submenus
+    document.querySelectorAll('.dropdown-submenu > .submenu-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Close all open submenus
+            document.querySelectorAll('.dropdown-submenu > .dropdown-content.show').forEach(function(menu) {
+                if (menu !== btn.nextElementSibling) {
+                    menu.classList.remove('show');
+                }
+            });
+            // Toggle this submenu
+            if (btn.nextElementSibling) {
+                btn.nextElementSibling.classList.toggle('show');
+            }
+        });
+    });
 });
 
 function openModal(id) {

@@ -19,7 +19,6 @@ header {
     z-index: 1000;
     background: #073901;
     box-shadow: 0 2px 8px rgba(56,142,60,0.07);
-    border-radius: 0;
     width: 100%;
 }
 
@@ -33,44 +32,44 @@ header {
 }
 
 .main-nav li {
-    margin: 0 24px;
+    margin: 0 32px;
     position: relative;
 }
 
-.main-nav a {
+.main-nav a,
+.main-nav .dropbtn {
     display: block;
     color: #fff;
     font-weight: 600;
     text-decoration: none;
-    font-size: 1.15em;
+    font-size: 1.2em;
     padding: 18px 0;
     transition: color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav .dropbtn:hover {
     color: #aeea00;
 }
 
-/* Dropdown styles */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropbtn {
-    cursor: pointer;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
+    left: 0;
+    top: 100%;
     background: #fff;
-    min-width: 220px;
+    min-width: 200px;
     box-shadow: 0 8px 24px rgba(56,142,60,0.13);
     border-radius: 0 0 10px 10px;
     z-index: 1001;
-    left: 0;
-    top: 100%;
 }
 
 .dropdown-content a {
@@ -92,62 +91,34 @@ header {
     color: #388e3c;
 }
 
-.dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
+.dropdown:hover > .dropdown-content,
+.dropdown:focus-within > .dropdown-content {
     display: block;
 }
 
-@media (max-width: 700px) {
-    .main-nav ul {
-        flex-direction: column;
-    }
-    .main-nav li {
-        margin: 8px 0;
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.dropdown {
-    display: inline-block;
+/* Submenu styles */
+.dropdown-submenu {
     position: relative;
 }
 
-.dropdown-content {
+.dropdown-submenu > .dropdown-content {
     display: none;
     position: absolute;
-    left: 0;
-    top: 100%;
-    background: #fff;
+    left: 100%;
+    top: 0;
     min-width: 180px;
-    box-shadow: 0 2px 8px rgba(56,142,60,0.12);
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 10;
-}
-
-.dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
-    display: block;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(56,142,60,0.13);
+    border-radius: 0 0 10px 10px;
+    z-index: 1002;
 }
 
 .dropdown-content.show {
     display: block;
 }
 
-.dropdown-content a {
-    color: #2d4739;
-    padding: 12px 18px;
-    display: block;
-    text-align: left;
-    text-decoration: none;
-}
-
-.dropdown-content a:hover {
-    background: #c8e6c9;
-    color: #023d11;
+html {
+    scroll-behavior: smooth;
 }
 
 .hero {
@@ -526,7 +497,7 @@ html {
 }
 
 footer {
-    background: #f6f6f6;
+    background: #5bc463;
     width: 100vw;
     margin: 0;
     padding: 40px 0 0 0;
